@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Sección editable -->
+        <title>Inicio | Usimte</title>
+        <meta name="description" content="Pagina de inicio del grupo Usimte">
+        <!-- Fin sección editable -->
+
+        <meta name="author" content="Usimte">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">    
+        <link href="/css/bootstrap-social.css" rel="stylesheet"> <!--Para redes sociales. Simbolos disponible: https://lipis.github.io/bootstrap-social/ --> 
+        <link href="/css/font-awesome.css" rel="stylesheet"> <!-- Necesario para usar boostrap-social -->
+
+        <link href="/css/estilos_Usimte.css" rel="stylesheet"> <!-- Dar estilo propio -->
+        <link href="/css/animate.css" rel="stylesheet"> <!-- Animate se usa en las animaciones https://daneden.github.io/animate.css/ -->
+        <script src="/js/angular.min.js"></script>    <!-- Framework para manejar front-end -->
+        <script src="/js/route.min.js"></script>      <!-- Complemento de Angular para manejar rutas, usado en menu de navegacion y footer -->
+
+        <script src="/js/jquery.min.js"></script>     <!-- Se usa para interactuar con los elementos de la pagina -->
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/scripts.js"></script>        <!-- JavaScript propio -->
+
+    </head>
+    <body>
+
+    <!-- <div class="container-fluid"> -->
+    <div class="container"> 
+        <!-- Se añade el menu de navegacion de la pagina -->
+        <div ng-include src="'/elementos/menu_navegacion.html'"></div>  
+
+        <!-- Inicio sección editable-->
+
+
+
+        <!-- Fin sección editable-->
+        
+    </div>
+
+    <!-- Se añade el footer de la pagina -->
+    <div ng-include src="'/elementos/footer.html'"></div>  
+    </body>
+</html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

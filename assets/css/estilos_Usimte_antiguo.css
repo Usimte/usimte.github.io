@@ -1,0 +1,359 @@
+/*
+
+ *       *  *********  *********  **     **  *********  *********     *********  *********  *********  
+ *       *  *              *      * *   * *      *      *             *          *          *
+ *       *  *              *      *  * *  *      *      *             *          *          *
+ *       *  *********      *      *   *   *      *      *********     *          *********  *********
+ *       *          *      *      *       *      *      *             *                  *          *
+ *       *          *      *      *       *      *      *         **  *                  *          *
+ *********  *********  ********   *       *      *      ********* **  *********  *********  *********
+ 
+*/
+
+/* 
+*    Reglas: Las unidades del tamaño de fuentes se manejan en puntos(pt) 
+*            A las imagenes se les asigna el alto y el ancho desde el html, las expepciones son las imagenes de los menús
+*            Cada regla que se coloque en la seccion "Elementos especiales" debe documentar en que página se usa (ejemplo: index.html) y para qué es usado
+*/
+
+/***************************************************************************************
+* Orden documentación
+***************************************************************************************/
+/*
+    1. Efectos generales: efectos que son aplicables a diferentes elementos
+    2. Estilos generales: aplican a los elementos como p, h1, body.
+    3. Elementos especiales: reglas especiales que corresponden a un elementos especial en la página
+    4. Parrafos
+    5. Estilos menú de navegación
+    6. Footer
+*/
+h1{ 
+	   
+}
+
+/****************************************************************************************
+ *  1. Efectos generales 
+****************************************************************************************/
+
+/* Efecto de zoom */
+.zoom_1_2:hover{
+	transform: scale(1.2);
+}
+
+.zoom_1_4:hover{
+	transform: scale(1.4);
+}
+
+.zoom_1_6:hover{
+	transform: scale(1.6);
+}
+
+/* tamaño de imagenes */
+.img_100_100{ 
+    height: 100px;
+    width: 100px;
+}
+
+.img_55_55{ 
+    height: 55px;
+    width: 55px;
+}
+
+.img_70_70{ 
+    height: 70px;
+    width: 70px;
+}
+
+/* Demorar n segundos los efectos */
+.retraso-1seg{
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.retraso-2seg{
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+/* Girar imagenes */
+.img_girar_15_izq:hover{
+	transform : rotate(-15deg);
+	-moz-transform : rotate(-15deg); /* Firefox */
+	-webkit-transform : rotate(-15deg); /* Chrome - Safari */
+	-o-transform : rotate(-15deg); /* Opera */
+}
+
+.img_girar_15_der:hover{
+	transform : rotate(15deg);
+	-moz-transform : rotate(15deg); /* Firefox */
+	-webkit-transform : rotate(15deg); /* Chrome - Safari */
+	-o-transform : rotate(15deg); /* Opera */
+}
+
+/* Se usa para que los elementos floten al lado izquierdo de la pagina */
+.img_flotante {
+    position: fixed;
+    float: left;
+    top: 250px;
+    left: 40px;
+}
+
+.img_carrusel{
+    width="900"; 
+    height="512";
+}
+
+.img_c_500{
+	width="500"; 
+	height="500";	
+}
+/* Fin 1*/
+
+/***************************************************************************************
+ * 2. Estilos generales 
+***************************************************************************************/
+body {
+  padding-top: 8pt;
+  color: black;
+  background: #ffffff;
+  padding-top: 57pt;
+}
+
+p, ul, ol, li, dl, dt, dd{
+    font-size: 16pt;
+}
+
+h1{
+	color: #458c35;
+    font-weight: bold;
+}
+
+h2{
+    color: #ca841b;
+    font-weight: bold;
+}
+
+h3{
+    color: #ca841b;
+    font-weight: bold;
+}
+header{
+     padding-top: 9px;
+}
+
+ul li:hover{  /* Color de listas no ordenadas*/
+    color: #2a7b11; 
+}
+
+/* Fin 2 */
+
+/***************************************************************************************
+ * 3. Elementos especiales
+***************************************************************************************/
+/* Imagen integrantes. Se usa en integrantes.html y es llevado a quienes_somos.html. */
+.img_integrante{
+    padding: 6px 2px !important;
+}
+
+
+/* Link para acceder a los documentos de los talleres. Todos los talleres .html*/
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+    
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.caja_link_talleres{
+    background-color: #d48a1d;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    width: 120pt; 
+    height: 35pt;
+    color: black;
+    margin-left: 5%;
+    font-weight: bold;
+    padding-top: 12px;
+}
+
+/* Flotar imagenes*/
+.flotarDerecha{
+    float: right;
+}
+
+.flotarIzquierda{
+    float: left;
+}
+
+.flotarCentro{
+    display:block;
+    margin:0 auto 0 auto;
+}
+/* Flotar imagenes*/
+
+/* Elementos didacticos usados en el taller de comandos*/
+.tips{
+    border: 2px solid #1c1c58;
+    background-color: #91e4e6;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+/*----------------------------------------------------*/
+
+/* Fin 3 */
+
+/***************************************************************************************
+ * 4. Parrafos 
+***************************************************************************************/
+.p_justificado{
+	text-align: justify;
+}
+
+.p_centrado{
+	text-align: center;
+}
+
+.p_izquierda{
+    text-align: left;
+}
+
+.p_derecha{
+    text-align: right;
+}
+/* Fin 4 */
+
+
+/***************************************************************************************
+ *  5. Estilos menú de navegación  
+***************************************************************************************/
+
+/* Elementos del menu: inicio, quienes somos... */
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    border-radius: 10px;
+    margin-top: 4px;
+}
+
+.navbar-inverse:hover .navbar-nav>li>a:hover {
+    background-color: #458c35;  /* Color al pasar el cursor sobre el menú de navegación*/
+    cursor:pointer;
+}
+
+/* Letras del "logo" lado derecho*/
+.navbar-inverse .navbar-brand{ 
+    font-size: 36pt;
+    line-height: 10pt;
+    color: white;
+}
+.navbar-inverse .navbar-brand:hover{
+    color: aqua; /* Cambia color a las letras del logo*/
+}
+
+/* Submenus */
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+     color: black;
+}
+
+.navbar-inverse{
+    background-color: #4572d6; /* Color de fondo de la barra de navegacion*/
+
+}
+
+/* Ubicacion del menú de navegación */
+.navbar-fixed-top{
+    position: absolute;
+}
+
+/* Mostrar submenu al pasar el cursor*/
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
+/* Fin 5 */
+
+/***************************************************************************************
+ * 6. Footer
+***************************************************************************************/
+footer{
+    padding-bottom: 30px;
+	width: 100%;
+	height: auto;
+	background: #4572d6;
+	border-top: 2px solid #000;
+	position: relative;
+	color: #ffffff;
+}
+
+/* Zoom de los iconos del footer*/
+.zoom_icon_social:hover{
+    transform: scale(1.5);
+}
+
+ /* Se para acomodar el footer. La distancia entre el contenido y footer*/ 
+.container{
+	padding-bottom: 10px; 
+}
+
+/* Fin 6 */
+
+
+
+/*
+Cajas de contenido
+*/
+.caja_contenido {
+    background-color: #8aa0dc;
+    border: 1px solid #666699;
+    border-radius: 60px;
+    text-align: center;
+    width: 90%; 
+    height: 45pt;
+    color: black;
+    margin-left: 5%;
+}
+
+.caja_contenido:hover{    
+      box-shadow: 0px 0px 30px green;
+      padding: 1px;
+      border: 0.5px solid green;
+      transform: scale(1.2);
+}
+
+
+.caja_contenido_2 {
+    background-color: #8aa0dc;
+    border: 1px solid #666699;
+    border-radius: 60px;
+    text-align: center;
+    font-family: sans-serif !important;   
+    vertical-align: middle;
+    color: black;
+}

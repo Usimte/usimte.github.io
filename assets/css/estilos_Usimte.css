@@ -1,0 +1,90 @@
+
+/* */
+.img_menu_navegacion{
+    width: 60px;
+    height: auto;
+    
+}
+
+.padding-top_4{
+    padding-top: 4px;
+}
+
+.titulo_img {
+    font-size: 24px;
+    color: brown;
+    font-weight: bold !important;
+    
+}
+
+.saltar:hover {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+.animacion {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.pendulo:hover {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+}
+
+.rotacion_in:hover {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+}
+
+.caja_link_talleres{
+    background-color: #d48a1d;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    width: 120pt; 
+    height: 35pt;
+    color: black;
+    margin-left: 5%;
+    font-weight: bold;
+    padding-top: 12px;
+}
+
+/* Link para acceder a los documentos de los talleres. Todos los talleres .html*/
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+    
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.link {
+    color: #025aff;
+}
+

@@ -1,0 +1,137 @@
+{
+    "integrantes":[
+        {
+            "id": "usimte_i1",
+            "nombre": "Ivan",
+            "apellido": "Rojas",
+            "rol": "Dinamizador",
+            "descripcion": "Lo sentimos el integrante no ha actualizado su descripción.",
+            "link_GitHub": "",
+            "imagen_perfil": "/imagenes/img_integrantes/deadpool.png"
+        },
+        {
+            "id": "usimte_a1",
+            "nombre": "Alexei",
+            "apellido": "Ochoa",
+            "rol": "Docente",
+            "descripcion": "Lo sentimos el integrante no ha actualizado su descripción.",
+            "link_GitHub": "",
+            "imagen_perfil": "/imagenes/img_integrantes/tuxpirata.png"
+        },
+        {
+            "id": "usimte_c1",
+            "nombre": "Cesar",
+            "apellido": "Pedraza",
+            "rol": "Docente",
+            "descripcion": "Lo sentimos el integrante no ha actualizado su descripción.",
+            "link_GitHub": "",
+            "imagen_perfil": "/imagenes/img_integrantes/pinguino_ubuntu.png"
+        },
+        {
+            "id": "usimte_c2",
+            "nombre": "Camilo",
+            "apellido": "Pinilla",
+            "rol": "Integrante",
+            "descripcion": "Lo sentimos el integrante no ha actualizado su descripción.",
+            "link_GitHub": "",
+            "imagen_perfil": "/imagenes/img_integrantes/pinguino_ubuntu.png"
+        },
+        {
+            "id": "usimte_e1",
+            "nombre": "Eliana",
+            "apellido": "Santana",
+            "rol": "Integrante ",
+            "descripcion": "Estudiante de Ingenieria en la UNAL. Encargada de la creación, planificación y ejecución de todas las actividades del grupo y representante oficial de Usimte ante la UNAL desde el 2016.",
+            "link_GitHub": "",
+            "imagen_perfil": "/imagenes/img_integrantes/pinguino_ubuntu.png"
+        },
+        {
+            "id": "usimte_f1",
+            "nombre": "Fahir",
+            "apellido": "Castañeda",
+            "rol": "Integrante ",
+            "descripcion": "Lo sentimos el integrante no ha actualizado su descripción.",
+            "link_GitHub": "",
+            "imagen_perfil": "/imagenes/img_integrantes/pinguino_ubuntu.png"
+        },
+        {
+            "id": "usimte_h1",
+            "nombre": "Hector",
+            "apellido": "Camacho",
+            "rol": "Literato",
+            "descripcion": "Lo sentimos el integrante no ha actualizado su descripción.",
+            "link_GitHub": "",
+            "imagen_perfil": "/imagenes/img_integrantes/pinguino_ubuntu.png"
+        },
+        {
+            "id": "usimte_j2",
+            "nombre": "Johan",
+            "apellido": "Mora",
+            "rol": "Vocero externo",
+            "descripcion": "Lo sentimos el integrante no ha actualizado su descripción.",
+            "link_GitHub": "",
+            "imagen_perfil": "/imagenes/img_integrantes/pinguino_ubuntu.png"
+        },
+        {
+            "id": "usimte_j3",
+            "nombre": "Jonatan",
+            "apellido": "Parra",
+            "rol": "Desarrollador",
+            "descripcion": "Estudiante de Ingeniera en la UNAL, encargado del área del desarrollo web en los diferentes proyectos del grupo Usimte, como lo son el desarrollo de la página y apoyo al proyecto con el cabildo.",
+            "link_GitHub": "https://github.com/jonatan360",
+            "imagen_perfil": "/imagenes/img_integrantes/iron_pinguino.png"
+        },
+        {
+            "id": "usimte_j4",
+            "nombre": "Jorge",
+            "apellido": "Torres",
+            "rol": "Desarrollador",
+            "descripcion": "Lo sentimos el integrante no ha actualizado su descripción.",
+            "link_GitHub": "",
+            "imagen_perfil": "/imagenes/img_integrantes/espejo.jpg"
+        },
+        {
+            "id": "usimte_o1",
+            "nombre": "Osmar",
+            "apellido": "Castillo",
+            "rol": "Integrante",
+            "descripcion": "Lo sentimos el integrante no ha actualizado su descripción.",
+            "link_GitHub": "",
+            "imagen_perfil": "/imagenes/img_integrantes/libro_cultura.jpg"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

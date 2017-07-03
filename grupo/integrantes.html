@@ -1,0 +1,51 @@
+<!-- Validador de Json http://jsonlint.com-->
+<div ng-controller="controladorDatos">
+    <!-- Integrante-->
+    <span ng-repeat="integrante in equipo.integrantes" >
+        
+        <a id="modal-1" href="#{{integrante.id}}" role="button" class="btn img_integrante" data-toggle="modal" > <img class="saltar animacion" src="{{integrante.imagen_perfil}}" title="Click para saber mas" alt="Imagen integrante" width="90" height="90"><br>{{integrante.rol}}<br>{{integrante.nombre}}<br>{{integrante.apellido}}</a>
+        <div class="modal fade" id="{{integrante.id}}" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> × </button>
+                        <h4 class="modal-title" id="myModalLabel">  {{integrante.nombre}} {{integrante.apellido}}. {{integrante.rol}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <strong>Descripción: </strong>{{integrante.descripcion}}
+                        <span  ng-if="integrante.link_GitHub">
+                            <br>
+                            <strong>Perfil GitHub: </strong><a href="{{integrante.link_GitHub}}" target="_blank"> {{integrante.link_GitHub}} </a>
+                        </span>
+                        <br>
+                        <br>
+                        <img  src="{{integrante.imagen_perfil}}"  width="90" height="90" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">  Cerrar </button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </span>
+    <!-- Fin integrante -->
+</div>
+
+
+<script type="text/javascript">
+    var misDatos = angular.module('datosAoo',[]);
+
+    misDatos.controller('controladorDatos',function($scope,$http){
+        $scope.importar = function(){
+            $http.get('integrantes.josn').success(function(datos){
+                $scope.equipo = datos;
+            });
+        }
+        $scope.importar();
+    });
+
+</script>
+
+    
+ 
